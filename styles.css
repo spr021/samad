@@ -11,7 +11,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60vw;
+    width: 70vw;
     height: 90vh;
     box-shadow: 1px 1px #bbb;
     background-color: #7735bd;
@@ -20,6 +20,7 @@ body{
 }
 .row{
     display: flex;
+    margin: 5px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -30,4 +31,15 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.list li{
+    margin-left: 30px;
+    margin-top: 10px;
 }
