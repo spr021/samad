@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html>
     <head>
       <link type="text/css" href="styles.css" rel="stylesheet">
@@ -9,465 +9,500 @@
 
     <body>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <div class="index">
+      <div class="index container">
       <div class="row">
-            <form class="col s12">
-              <div class="row">
-                <div>
-                <div class="input-field col s6">
-                  <input id="first_name" type="text" class="validate">
-                  <label for="first_name"><span style="font-size: 20px; color: #fff;">نام کاربری</span></label>
-                </div>
-                <div class="input-field col s6">
-                  <input id="last_name" type="text" class="validate">
-                  <label for="last_name"><span style="font-size: 20px; color: #fff;">پسورد</span></label>
-                </div>
+        <form class="col s12">
+          <div class="row">
+            <div class="userpass">
+              <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name"><span style="font-size: 20px; color: #fff;">نام کاربری</span></label>
               </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name"><span style="font-size: 20px; color: #fff;">پسورد</span></label>
               </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <div class="switch">
-                    <label>
-                      <span style="font-size: 2em; color: #fff;">سلف ترنج</span>
-                        <input type="checkbox">
-                        <span class="lever"></span>
-                        <span style="font-size: 2em; color: #fff;">سلف نفت</span>
-                    </label>
-                  </div>
-              </div>
-              <div class="row">
-
-                  <ol class="list">
-                      <li><select id='mySelect' class="browser-default">
-                          <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
-                          <option value="1">خوراك ماكاروني</option>
-                          <option value="2">چلوخورش قيمه سيب زميني</option>
-                          <option value="3">کشک بادمجان</option>
-                          <option value="4">چلو کباب کوبیده</option>
-                          <option value="5">سبزي پلو با ماهي</option>
-                          <option value="6">جوجه كباب + برنج</option>
-                          <option value="7">استامبولي پلو</option>
-                          <option value="8">چلوخورش قورمه سبزي</option>
-                          <option value="9">چلوخورش كرفس</option>
-                          <option value="10">زرشك پلو با مرغ</option>
-                          <option value="11">عدس پلو با گوشت و كشمش</option>
-                          <option value="12">آبگوشت</option>
-                          <option value="13">چلو خورش فسنجان</option>
-                          <option value="14">لوبيا پلو</option>
-                          <option value="15">چلوخورش آلو اسفناج</option>
-                          <option value="16">باقالا پلو با مرغ</option>
-                          <option value="17">چلوخورش قيمه بادمجان</option>
-                          <option value="18">دلمه</option>
-                          <option value="19">رشته پلو با گوشت</option>
-                        </select></li>
-                        <li><select id='mySelect' class="browser-default">
-                            <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
-                            <option value="1">خوراك ماكاروني</option>
-                            <option value="2">چلوخورش قيمه سيب زميني</option>
-                            <option value="3">کشک بادمجان</option>
-                            <option value="4">چلو کباب کوبیده</option>
-                            <option value="5">سبزي پلو با ماهي</option>
-                            <option value="6">جوجه كباب + برنج</option>
-                            <option value="7">استامبولي پلو</option>
-                            <option value="8">چلوخورش قورمه سبزي</option>
-                            <option value="9">چلوخورش كرفس</option>
-                            <option value="10">زرشك پلو با مرغ</option>
-                            <option value="11">عدس پلو با گوشت و كشمش</option>
-                            <option value="12">آبگوشت</option>
-                            <option value="13">چلو خورش فسنجان</option>
-                            <option value="14">لوبيا پلو</option>
-                            <option value="15">چلوخورش آلو اسفناج</option>
-                            <option value="16">باقالا پلو با مرغ</option>
-                            <option value="17">چلوخورش قيمه بادمجان</option>
-                            <option value="18">دلمه</option>
-                            <option value="19">رشته پلو با گوشت</option>
-                          </select></li>
-                      
-                          <li><select id='mySelect' class="browser-default">
-                              <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
-                              <option value="1">خوراك ماكاروني</option>
-                              <option value="2">چلوخورش قيمه سيب زميني</option>
-                              <option value="3">کشک بادمجان</option>
-                              <option value="4">چلو کباب کوبیده</option>
-                              <option value="5">سبزي پلو با ماهي</option>
-                              <option value="6">جوجه كباب + برنج</option>
-                              <option value="7">استامبولي پلو</option>
-                              <option value="8">چلوخورش قورمه سبزي</option>
-                              <option value="9">چلوخورش كرفس</option>
-                              <option value="10">زرشك پلو با مرغ</option>
-                              <option value="11">عدس پلو با گوشت و كشمش</option>
-                              <option value="12">آبگوشت</option>
-                              <option value="13">چلو خورش فسنجان</option>
-                              <option value="14">لوبيا پلو</option>
-                              <option value="15">چلوخورش آلو اسفناج</option>
-                              <option value="16">باقالا پلو با مرغ</option>
-                              <option value="17">چلوخورش قيمه بادمجان</option>
-                              <option value="18">دلمه</option>
-                              <option value="19">رشته پلو با گوشت</option>
-                            </select></li>
-                            <li><select id='mySelect' class="browser-default">
-                                <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
-                                <option value="1">خوراك ماكاروني</option>
-                                <option value="2">چلوخورش قيمه سيب زميني</option>
-                                <option value="3">کشک بادمجان</option>
-                                <option value="4">چلو کباب کوبیده</option>
-                                <option value="5">سبزي پلو با ماهي</option>
-                                <option value="6">جوجه كباب + برنج</option>
-                                <option value="7">استامبولي پلو</option>
-                                <option value="8">چلوخورش قورمه سبزي</option>
-                                <option value="9">چلوخورش كرفس</option>
-                                <option value="10">زرشك پلو با مرغ</option>
-                                <option value="11">عدس پلو با گوشت و كشمش</option>
-                                <option value="12">آبگوشت</option>
-                                <option value="13">چلو خورش فسنجان</option>
-                                <option value="14">لوبيا پلو</option>
-                                <option value="15">چلوخورش آلو اسفناج</option>
-                                <option value="16">باقالا پلو با مرغ</option>
-                                <option value="17">چلوخورش قيمه بادمجان</option>
-                                <option value="18">دلمه</option>
-                                <option value="19">رشته پلو با گوشت</option>
-                              </select></li>
-                              <li><select id='mySelect' class="browser-default">
-                                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
-                                  <option value="1">خوراك ماكاروني</option>
-                                  <option value="2">چلوخورش قيمه سيب زميني</option>
-                                  <option value="3">کشک بادمجان</option>
-                                  <option value="4">چلو کباب کوبیده</option>
-                                  <option value="5">سبزي پلو با ماهي</option>
-                                  <option value="6">جوجه كباب + برنج</option>
-                                  <option value="7">استامبولي پلو</option>
-                                  <option value="8">چلوخورش قورمه سبزي</option>
-                                  <option value="9">چلوخورش كرفس</option>
-                                  <option value="10">زرشك پلو با مرغ</option>
-                                  <option value="11">عدس پلو با گوشت و كشمش</option>
-                                  <option value="12">آبگوشت</option>
-                                  <option value="13">چلو خورش فسنجان</option>
-                                  <option value="14">لوبيا پلو</option>
-                                  <option value="15">چلوخورش آلو اسفناج</option>
-                                  <option value="16">باقالا پلو با مرغ</option>
-                                  <option value="17">چلوخورش قيمه بادمجان</option>
-                                  <option value="18">دلمه</option>
-                                  <option value="19">رشته پلو با گوشت</option>
-                                </select></li>
-                                <li><select id='mySelect' class="browser-default">
-                                    <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
-                                    <option value="1">خوراك ماكاروني</option>
-                                    <option value="2">چلوخورش قيمه سيب زميني</option>
-                                    <option value="3">کشک بادمجان</option>
-                                    <option value="4">چلو کباب کوبیده</option>
-                                    <option value="5">سبزي پلو با ماهي</option>
-                                    <option value="6">جوجه كباب + برنج</option>
-                                    <option value="7">استامبولي پلو</option>
-                                    <option value="8">چلوخورش قورمه سبزي</option>
-                                    <option value="9">چلوخورش كرفس</option>
-                                    <option value="10">زرشك پلو با مرغ</option>
-                                    <option value="11">عدس پلو با گوشت و كشمش</option>
-                                    <option value="12">آبگوشت</option>
-                                    <option value="13">چلو خورش فسنجان</option>
-                                    <option value="14">لوبيا پلو</option>
-                                    <option value="15">چلوخورش آلو اسفناج</option>
-                                    <option value="16">باقالا پلو با مرغ</option>
-                                    <option value="17">چلوخورش قيمه بادمجان</option>
-                                    <option value="18">دلمه</option>
-                                    <option value="19">رشته پلو با گوشت</option>
-                                  </select></li>
-                                  <li><select id='mySelect' class="browser-default">
-                                      <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
-                                      <option value="1">خوراك ماكاروني</option>
-                                      <option value="2">چلوخورش قيمه سيب زميني</option>
-                                      <option value="3">کشک بادمجان</option>
-                                      <option value="4">چلو کباب کوبیده</option>
-                                      <option value="5">سبزي پلو با ماهي</option>
-                                      <option value="6">جوجه كباب + برنج</option>
-                                      <option value="7">استامبولي پلو</option>
-                                      <option value="8">چلوخورش قورمه سبزي</option>
-                                      <option value="9">چلوخورش كرفس</option>
-                                      <option value="10">زرشك پلو با مرغ</option>
-                                      <option value="11">عدس پلو با گوشت و كشمش</option>
-                                      <option value="12">آبگوشت</option>
-                                      <option value="13">چلو خورش فسنجان</option>
-                                      <option value="14">لوبيا پلو</option>
-                                      <option value="15">چلوخورش آلو اسفناج</option>
-                                      <option value="16">باقالا پلو با مرغ</option>
-                                      <option value="17">چلوخورش قيمه بادمجان</option>
-                                      <option value="18">دلمه</option>
-                                      <option value="19">رشته پلو با گوشت</option>
-                                    </select></li>
-                                    <li><select id='mySelect' class="browser-default">
-                                        <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
-                                        <option value="1">خوراك ماكاروني</option>
-                                        <option value="2">چلوخورش قيمه سيب زميني</option>
-                                        <option value="3">کشک بادمجان</option>
-                                        <option value="4">چلو کباب کوبیده</option>
-                                        <option value="5">سبزي پلو با ماهي</option>
-                                        <option value="6">جوجه كباب + برنج</option>
-                                        <option value="7">استامبولي پلو</option>
-                                        <option value="8">چلوخورش قورمه سبزي</option>
-                                        <option value="9">چلوخورش كرفس</option>
-                                        <option value="10">زرشك پلو با مرغ</option>
-                                        <option value="11">عدس پلو با گوشت و كشمش</option>
-                                        <option value="12">آبگوشت</option>
-                                        <option value="13">چلو خورش فسنجان</option>
-                                        <option value="14">لوبيا پلو</option>
-                                        <option value="15">چلوخورش آلو اسفناج</option>
-                                        <option value="16">باقالا پلو با مرغ</option>
-                                        <option value="17">چلوخورش قيمه بادمجان</option>
-                                        <option value="18">دلمه</option>
-                                        <option value="19">رشته پلو با گوشت</option>
-                                      </select></li>
-                                      <li><select id='mySelect' class="browser-default">
-                                          <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
-                                          <option value="1">خوراك ماكاروني</option>
-                                          <option value="2">چلوخورش قيمه سيب زميني</option>
-                                          <option value="3">کشک بادمجان</option>
-                                          <option value="4">چلو کباب کوبیده</option>
-                                          <option value="5">سبزي پلو با ماهي</option>
-                                          <option value="6">جوجه كباب + برنج</option>
-                                          <option value="7">استامبولي پلو</option>
-                                          <option value="8">چلوخورش قورمه سبزي</option>
-                                          <option value="9">چلوخورش كرفس</option>
-                                          <option value="10">زرشك پلو با مرغ</option>
-                                          <option value="11">عدس پلو با گوشت و كشمش</option>
-                                          <option value="12">آبگوشت</option>
-                                          <option value="13">چلو خورش فسنجان</option>
-                                          <option value="14">لوبيا پلو</option>
-                                          <option value="15">چلوخورش آلو اسفناج</option>
-                                          <option value="16">باقالا پلو با مرغ</option>
-                                          <option value="17">چلوخورش قيمه بادمجان</option>
-                                          <option value="18">دلمه</option>
-                                          <option value="19">رشته پلو با گوشت</option>
-                                        </select></li>
-                                        <li><select id='mySelect' class="browser-default">
-                                            <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
-                                            <option value="1">خوراك ماكاروني</option>
-                                            <option value="2">چلوخورش قيمه سيب زميني</option>
-                                            <option value="3">کشک بادمجان</option>
-                                            <option value="4">چلو کباب کوبیده</option>
-                                            <option value="5">سبزي پلو با ماهي</option>
-                                            <option value="6">جوجه كباب + برنج</option>
-                                            <option value="7">استامبولي پلو</option>
-                                            <option value="8">چلوخورش قورمه سبزي</option>
-                                            <option value="9">چلوخورش كرفس</option>
-                                            <option value="10">زرشك پلو با مرغ</option>
-                                            <option value="11">عدس پلو با گوشت و كشمش</option>
-                                            <option value="12">آبگوشت</option>
-                                            <option value="13">چلو خورش فسنجان</option>
-                                            <option value="14">لوبيا پلو</option>
-                                            <option value="15">چلوخورش آلو اسفناج</option>
-                                            <option value="16">باقالا پلو با مرغ</option>
-                                            <option value="17">چلوخورش قيمه بادمجان</option>
-                                            <option value="18">دلمه</option>
-                                            <option value="19">رشته پلو با گوشت</option>
-                                          </select></li>
-                                          <li><select id='mySelect' class="browser-default">
-                                              <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
-                                              <option value="1">خوراك ماكاروني</option>
-                                              <option value="2">چلوخورش قيمه سيب زميني</option>
-                                              <option value="3">کشک بادمجان</option>
-                                              <option value="4">چلو کباب کوبیده</option>
-                                              <option value="5">سبزي پلو با ماهي</option>
-                                              <option value="6">جوجه كباب + برنج</option>
-                                              <option value="7">استامبولي پلو</option>
-                                              <option value="8">چلوخورش قورمه سبزي</option>
-                                              <option value="9">چلوخورش كرفس</option>
-                                              <option value="10">زرشك پلو با مرغ</option>
-                                              <option value="11">عدس پلو با گوشت و كشمش</option>
-                                              <option value="12">آبگوشت</option>
-                                              <option value="13">چلو خورش فسنجان</option>
-                                              <option value="14">لوبيا پلو</option>
-                                              <option value="15">چلوخورش آلو اسفناج</option>
-                                              <option value="16">باقالا پلو با مرغ</option>
-                                              <option value="17">چلوخورش قيمه بادمجان</option>
-                                              <option value="18">دلمه</option>
-                                              <option value="19">رشته پلو با گوشت</option>
-                                            </select></li>
-                                            <li><select id='mySelect' class="browser-default">
-                                                <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
-                                                <option value="1">خوراك ماكاروني</option>
-                                                <option value="2">چلوخورش قيمه سيب زميني</option>
-                                                <option value="3">کشک بادمجان</option>
-                                                <option value="4">چلو کباب کوبیده</option>
-                                                <option value="5">سبزي پلو با ماهي</option>
-                                                <option value="6">جوجه كباب + برنج</option>
-                                                <option value="7">استامبولي پلو</option>
-                                                <option value="8">چلوخورش قورمه سبزي</option>
-                                                <option value="9">چلوخورش كرفس</option>
-                                                <option value="10">زرشك پلو با مرغ</option>
-                                                <option value="11">عدس پلو با گوشت و كشمش</option>
-                                                <option value="12">آبگوشت</option>
-                                                <option value="13">چلو خورش فسنجان</option>
-                                                <option value="14">لوبيا پلو</option>
-                                                <option value="15">چلوخورش آلو اسفناج</option>
-                                                <option value="16">باقالا پلو با مرغ</option>
-                                                <option value="17">چلوخورش قيمه بادمجان</option>
-                                                <option value="18">دلمه</option>
-                                                <option value="19">رشته پلو با گوشت</option>
-                                              </select></li>
-                                              <li><select id='mySelect' class="browser-default">
-                                                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
-                                                  <option value="1">خوراك ماكاروني</option>
-                                                  <option value="2">چلوخورش قيمه سيب زميني</option>
-                                                  <option value="3">کشک بادمجان</option>
-                                                  <option value="4">چلو کباب کوبیده</option>
-                                                  <option value="5">سبزي پلو با ماهي</option>
-                                                  <option value="6">جوجه كباب + برنج</option>
-                                                  <option value="7">استامبولي پلو</option>
-                                                  <option value="8">چلوخورش قورمه سبزي</option>
-                                                  <option value="9">چلوخورش كرفس</option>
-                                                  <option value="10">زرشك پلو با مرغ</option>
-                                                  <option value="11">عدس پلو با گوشت و كشمش</option>
-                                                  <option value="12">آبگوشت</option>
-                                                  <option value="13">چلو خورش فسنجان</option>
-                                                  <option value="14">لوبيا پلو</option>
-                                                  <option value="15">چلوخورش آلو اسفناج</option>
-                                                  <option value="16">باقالا پلو با مرغ</option>
-                                                  <option value="17">چلوخورش قيمه بادمجان</option>
-                                                  <option value="18">دلمه</option>
-                                                  <option value="19">رشته پلو با گوشت</option>
-                                                </select></li>
-                                                <li><select id='mySelect' class="browser-default">
-                                                    <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
-                                                    <option value="1">خوراك ماكاروني</option>
-                                                    <option value="2">چلوخورش قيمه سيب زميني</option>
-                                                    <option value="3">کشک بادمجان</option>
-                                                    <option value="4">چلو کباب کوبیده</option>
-                                                    <option value="5">سبزي پلو با ماهي</option>
-                                                    <option value="6">جوجه كباب + برنج</option>
-                                                    <option value="7">استامبولي پلو</option>
-                                                    <option value="8">چلوخورش قورمه سبزي</option>
-                                                    <option value="9">چلوخورش كرفس</option>
-                                                    <option value="10">زرشك پلو با مرغ</option>
-                                                    <option value="11">عدس پلو با گوشت و كشمش</option>
-                                                    <option value="12">آبگوشت</option>
-                                                    <option value="13">چلو خورش فسنجان</option>
-                                                    <option value="14">لوبيا پلو</option>
-                                                    <option value="15">چلوخورش آلو اسفناج</option>
-                                                    <option value="16">باقالا پلو با مرغ</option>
-                                                    <option value="17">چلوخورش قيمه بادمجان</option>
-                                                    <option value="18">دلمه</option>
-                                                    <option value="19">رشته پلو با گوشت</option>
-                                                  </select></li>
-                                                  <li><select id='mySelect' class="browser-default">
-                                                      <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
-                                                      <option value="1">خوراك ماكاروني</option>
-                                                      <option value="2">چلوخورش قيمه سيب زميني</option>
-                                                      <option value="3">کشک بادمجان</option>
-                                                      <option value="4">چلو کباب کوبیده</option>
-                                                      <option value="5">سبزي پلو با ماهي</option>
-                                                      <option value="6">جوجه كباب + برنج</option>
-                                                      <option value="7">استامبولي پلو</option>
-                                                      <option value="8">چلوخورش قورمه سبزي</option>
-                                                      <option value="9">چلوخورش كرفس</option>
-                                                      <option value="10">زرشك پلو با مرغ</option>
-                                                      <option value="11">عدس پلو با گوشت و كشمش</option>
-                                                      <option value="12">آبگوشت</option>
-                                                      <option value="13">چلو خورش فسنجان</option>
-                                                      <option value="14">لوبيا پلو</option>
-                                                      <option value="15">چلوخورش آلو اسفناج</option>
-                                                      <option value="16">باقالا پلو با مرغ</option>
-                                                      <option value="17">چلوخورش قيمه بادمجان</option>
-                                                      <option value="18">دلمه</option>
-                                                      <option value="19">رشته پلو با گوشت</option>
-                                                    </select></li>
-                                                    <li><select id='mySelect' class="browser-default">
-                                                        <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
-                                                        <option value="1">خوراك ماكاروني</option>
-                                                        <option value="2">چلوخورش قيمه سيب زميني</option>
-                                                        <option value="3">کشک بادمجان</option>
-                                                        <option value="4">چلو کباب کوبیده</option>
-                                                        <option value="5">سبزي پلو با ماهي</option>
-                                                        <option value="6">جوجه كباب + برنج</option>
-                                                        <option value="7">استامبولي پلو</option>
-                                                        <option value="8">چلوخورش قورمه سبزي</option>
-                                                        <option value="9">چلوخورش كرفس</option>
-                                                        <option value="10">زرشك پلو با مرغ</option>
-                                                        <option value="11">عدس پلو با گوشت و كشمش</option>
-                                                        <option value="12">آبگوشت</option>
-                                                        <option value="13">چلو خورش فسنجان</option>
-                                                        <option value="14">لوبيا پلو</option>
-                                                        <option value="15">چلوخورش آلو اسفناج</option>
-                                                        <option value="16">باقالا پلو با مرغ</option>
-                                                        <option value="17">چلوخورش قيمه بادمجان</option>
-                                                        <option value="18">دلمه</option>
-                                                        <option value="19">رشته پلو با گوشت</option>
-                                                      </select></li>
-                                                      <li><select id='mySelect' class="browser-default">
-                                                          <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
-                                                          <option value="1">خوراك ماكاروني</option>
-                                                          <option value="2">چلوخورش قيمه سيب زميني</option>
-                                                          <option value="3">کشک بادمجان</option>
-                                                          <option value="4">چلو کباب کوبیده</option>
-                                                          <option value="5">سبزي پلو با ماهي</option>
-                                                          <option value="6">جوجه كباب + برنج</option>
-                                                          <option value="7">استامبولي پلو</option>
-                                                          <option value="8">چلوخورش قورمه سبزي</option>
-                                                          <option value="9">چلوخورش كرفس</option>
-                                                          <option value="10">زرشك پلو با مرغ</option>
-                                                          <option value="11">عدس پلو با گوشت و كشمش</option>
-                                                          <option value="12">آبگوشت</option>
-                                                          <option value="13">چلو خورش فسنجان</option>
-                                                          <option value="14">لوبيا پلو</option>
-                                                          <option value="15">چلوخورش آلو اسفناج</option>
-                                                          <option value="16">باقالا پلو با مرغ</option>
-                                                          <option value="17">چلوخورش قيمه بادمجان</option>
-                                                          <option value="18">دلمه</option>
-                                                          <option value="19">رشته پلو با گوشت</option>
-                                                        </select></li>
-                                                        <li><select id='mySelect' class="browser-default">
-                                                            <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
-                                                            <option value="1">خوراك ماكاروني</option>
-                                                            <option value="2">چلوخورش قيمه سيب زميني</option>
-                                                            <option value="3">کشک بادمجان</option>
-                                                            <option value="4">چلو کباب کوبیده</option>
-                                                            <option value="5">سبزي پلو با ماهي</option>
-                                                            <option value="6">جوجه كباب + برنج</option>
-                                                            <option value="7">استامبولي پلو</option>
-                                                            <option value="8">چلوخورش قورمه سبزي</option>
-                                                            <option value="9">چلوخورش كرفس</option>
-                                                            <option value="10">زرشك پلو با مرغ</option>
-                                                            <option value="11">عدس پلو با گوشت و كشمش</option>
-                                                            <option value="12">آبگوشت</option>
-                                                            <option value="13">چلو خورش فسنجان</option>
-                                                            <option value="14">لوبيا پلو</option>
-                                                            <option value="15">چلوخورش آلو اسفناج</option>
-                                                            <option value="16">باقالا پلو با مرغ</option>
-                                                            <option value="17">چلوخورش قيمه بادمجان</option>
-                                                            <option value="18">دلمه</option>
-                                                            <option value="19">رشته پلو با گوشت</option>
-                                                          </select></li>
-                                                          <li><select id='mySelect' class="browser-default">
-                                                              <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
-                                                              <option value="1">خوراك ماكاروني</option>
-                                                              <option value="2">چلوخورش قيمه سيب زميني</option>
-                                                              <option value="3">کشک بادمجان</option>
-                                                              <option value="4">چلو کباب کوبیده</option>
-                                                              <option value="5">سبزي پلو با ماهي</option>
-                                                              <option value="6">جوجه كباب + برنج</option>
-                                                              <option value="7">استامبولي پلو</option>
-                                                              <option value="8">چلوخورش قورمه سبزي</option>
-                                                              <option value="9">چلوخورش كرفس</option>
-                                                              <option value="10">زرشك پلو با مرغ</option>
-                                                              <option value="11">عدس پلو با گوشت و كشمش</option>
-                                                              <option value="12">آبگوشت</option>
-                                                              <option value="13">چلو خورش فسنجان</option>
-                                                              <option value="14">لوبيا پلو</option>
-                                                              <option value="15">چلوخورش آلو اسفناج</option>
-                                                              <option value="16">باقالا پلو با مرغ</option>
-                                                              <option value="17">چلوخورش قيمه بادمجان</option>
-                                                              <option value="18">دلمه</option>
-                                                              <option value="19">رشته پلو با گوشت</option>
-                                                            </select></li>
-                                                                                                                                                                                                                                                                                                                                                                          
-                    </ol> 
-                                      
-                  <input name="submit" type="submit" />
-              </div>
-            </form>
+            </div>
           </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <div class="switch">
+                <label>
+                  <span style="font-size: 2em; color: #fff;">سلف ترنج</span>
+                  <input type="checkbox">
+                  <span class="lever"></span>
+                  <span style="font-size: 2em; color: #fff;">سلف نفت</span>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <ol class="list center-align">
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>
+                <li><select id='mySelect' class="browser-default">
+                  <option value="" disabled selected>ِغذای خود را انتخواب کنید</option>
+                  <option value="1">خوراك ماكاروني</option>
+                  <option value="2">چلوخورش قيمه سيب زميني</option>
+                  <option value="3">کشک بادمجان</option>
+                  <option value="4">چلو کباب کوبیده</option>
+                  <option value="5">سبزي پلو با ماهي</option>
+                  <option value="6">جوجه كباب + برنج</option>
+                  <option value="7">استامبولي پلو</option>
+                  <option value="8">چلوخورش قورمه سبزي</option>
+                  <option value="9">چلوخورش كرفس</option>
+                  <option value="10">زرشك پلو با مرغ</option>
+                  <option value="11">عدس پلو با گوشت و كشمش</option>
+                  <option value="12">آبگوشت</option>
+                  <option value="13">چلو خورش فسنجان</option>
+                  <option value="14">لوبيا پلو</option>
+                  <option value="15">چلوخورش آلو اسفناج</option>
+                  <option value="16">باقالا پلو با مرغ</option>
+                  <option value="17">چلوخورش قيمه بادمجان</option>
+                  <option value="18">دلمه</option>
+                  <option value="19">رشته پلو با گوشت</option>
+                  <option value="20">مرغ سوخاری</option>
+                </select></li>                                                                                                                                                                                                                                        
+              </ol> 
+              <input class="waves-effect waves-light btn" name="submit" type="submit" />
+            </div>
+          </form>
         </div>
-        <script>
- 
-        </script>
+      </div>
     </body>
   </html>
         
